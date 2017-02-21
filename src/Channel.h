@@ -15,7 +15,7 @@ public:
 
 public:
 	Channel(std::shared_ptr<EventLoop> loop, int fd);
-	void EnabelReading();
+	void EnableReading();
 	inline int Events() const { return m_events; }
 	inline int Fd() const { return m_fd; }
 	void HandleEvent();

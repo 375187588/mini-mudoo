@@ -13,7 +13,7 @@ Channel::Channel(std::shared_ptr<EventLoop> loop, int fd):
 
 }
 
-void Channel::EnabelReading() {
+void Channel::EnableReading() {
 	m_events |= READEVENT;
 	m_loop->UpdateChannel(shared_from_this());
 }

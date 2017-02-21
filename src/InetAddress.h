@@ -18,6 +18,8 @@ public:
 	typedef std::uint16_t Port;
 
 public:
+	InetAddress(){};
+
 	InetAddress(std::string ip, InetAddress::Port port, Domain domain);
 
 	inline std::string GetIp() const { return m_ip; }

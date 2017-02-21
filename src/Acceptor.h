@@ -5,6 +5,7 @@
 #include "EventLoop.h"
 #include "InetAddress.h"
 #include "Socket.h"
+#include "Channel.h"
 
 class Acceptor {
 public:

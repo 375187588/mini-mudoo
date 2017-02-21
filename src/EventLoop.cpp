@@ -17,7 +17,7 @@ void EventLoop::Loop() {
         m_poller->Poll(activeChannels);
 
         for(auto& channel: activeChannels){
-            channel->HandleEvent();
+            channel.lock()->HandleEvent();
         }
     }
 }
